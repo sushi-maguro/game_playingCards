@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+<head lang="ja">
+<title>emoto</title>
+<meta charset="utf-8">
+</head>
+<style type="text/css">
+	* {
+        padding: 0;
+		margin: 0 auto;
+	}
+	body{background-color: #006400}
+	div{display: block;height:  11vw; }
+	a.card{ width: 7.4vw;
+	        height: 10.5vw;
+	        display: block;
+	        float: left;
+	        }
+a.card img {
+	width: 7.4vw;
+	height: 10.5vw;
+	visibility: hidden;
+}	        
+
+a.xxx img{visibility: visible;}
+
+data img {
+	width: 7.4vw;
+	height: 10.5vw;
+	visibility: visible;
+	float: left;
+}
+.tefuda{
+	padding: 44vw 0vw 200vw 0vw;
+	
+}	        
+
+</style>
+<script type="text/javascript">
+alert("game start");
+//let p0=13;
+//let p1=13;
+//let p2=13;
+//let p3=13;
+let p=[13,13,13,13]
+	//クリック時に呼び出し
+	function hooo(yeah){
+		
+		yeah.setAttribute("class","card xxx");
+		kawa=document.getElementById(yeah.value);
+		kawa.style.visibility='visible';
+		itto=yeah.firstElementChild;
+		itto.style.visibility='hidden';
+		kousinn(kawa.id);
+		p[0]--;
+		if (p[0]==0) {
+			alert("win");
+		}
+		//console.log(p[0]);
+		//console.log(0,kawa.id,p[0],p[1],p[2],p[3])
+		kirikae(1);
+		kirikae(2);
+		kirikae(3);
+    update();
+	}
+
+  function haru(){
+    //kirikae(0);
+    kirikae(1);
+    kirikae(2);
+    kirikae(3);
+    update();
+    
+  }
+	
+//}
+
+</script>
+<body>
+<div>
+	
+	<a class="card"><img id='1' src="./image/torannpu-illust1.png"></a>
+	<a class="card"><img id='2' src="./image/torannpu-illust2.png"></a>
+	<a class="card"><img id="3" src="./image/torannpu-illust3.png"></a>
+	<a class="card"><img id="4" src="./image/torannpu-illust4.png"></a>
+	<a class="card"><img id="5" src="./image/torannpu-illust5.png"></a>
+	<a class="card"><img id="6" src="./image/torannpu-illust6.png"></a>
+	<a class="card"><img id="7" src="./image/torannpu-illust7.png"></a>
+	<a class="card"><img id="8" src="./image/torannpu-illust8.png"></a>
+	<a class="card"><img id="9" src="./image/torannpu-illust9.png"></a>
+	<a class="card"><img id="10"src="./image/torannpu-illust10.png"></a>
+	<a class="card"><img id="11"src="./image/torannpu-illust11.png"></a>
+	<a class="card"><img id="12"src="./image/torannpu-illust12.png"></a>
+	<a class="card"><img id="13"src="./image/torannpu-illust13.png"></a>
+	<a class="card"><img id="14"src="./image/torannpu-illust14.png"></a>
+	<a class="card"><img id="15"src="./image/torannpu-illust15.png"></a>
+	<a class="card"><img id="16"src="./image/torannpu-illust16.png"></a>
+	<a class="card"><img id="17"src="./image/torannpu-illust17.png"></a>
+	<a class="card"><img id="18"src="./image/torannpu-illust18.png"></a>
+	<a class="card"><img id="19"src="./image/torannpu-illust19.png"></a>
+	<a class="card"><img id="20"src="./image/torannpu-illust20.png"></a>
+	<a class="card"><img id="21"src="./image/torannpu-illust21.png"></a>
+	<a class="card"><img id="22"src="./image/torannpu-illust22.png"></a>
+	<a class="card"><img id="23"src="./image/torannpu-illust23.png"></a>
+	<a class="card"><img id="24"src="./image/torannpu-illust24.png"></a>
+	<a class="card"><img id="25"src="./image/torannpu-illust25.png"></a>
+	<a class="card"><img id="26"src="./image/torannpu-illust26.png"></a>
+	<a class="card"><img id="27"src="./image/torannpu-illust27.png"></a>
+	<a class="card"><img id="28"src="./image/torannpu-illust28.png"></a>
+	<a class="card"><img id="29"src="./image/torannpu-illust29.png"></a>
+	<a class="card"><img id="30"src="./image/torannpu-illust30.png"></a>
+	<a class="card"><img id="31"src="./image/torannpu-illust31.png"></a>
+	<a class="card"><img id="32"src="./image/torannpu-illust32.png"></a>
+	<a class="card"><img id="33"src="./image/torannpu-illust33.png"></a>
+	<a class="card"><img id="34"src="./image/torannpu-illust34.png"></a>
+	<a class="card"><img id="35"src="./image/torannpu-illust35.png"></a>
+	<a class="card"><img id="36"src="./image/torannpu-illust36.png"></a>
+	<a class="card"><img id="37"src="./image/torannpu-illust37.png"></a>
+	<a class="card"><img id="38"src="./image/torannpu-illust38.png"></a>
+	<a class="card"><img id="39"src="./image/torannpu-illust39.png"></a>
+	<a class="card"><img id="40"src="./image/torannpu-illust40.png"></a>
+	<a class="card"><img id="41"src="./image/torannpu-illust41.png"></a>
+	<a class="card"><img id="42"src="./image/torannpu-illust42.png"></a>
+	<a class="card"><img id="43"src="./image/torannpu-illust43.png"></a>
+	<a class="card"><img id="44"src="./image/torannpu-illust44.png"></a>
+	<a class="card"><img id="45"src="./image/torannpu-illust45.png"></a>
+	<a class="card"><img id="46"src="./image/torannpu-illust46.png"></a>
+	<a class="card"><img id="47"src="./image/torannpu-illust47.png"></a>
+	<a class="card"><img id="48"src="./image/torannpu-illust48.png"></a>
+	<a class="card"><img id="49"src="./image/torannpu-illust49.png"></a>
+	<a class="card"><img id="50"src="./image/torannpu-illust50.png"></a>
+	<a class="card"><img id="51"src="./image/torannpu-illust51.png"></a>
+	<a class="card"><img id="52"src="./image/torannpu-illust52.png"></a>
+
+
+</div>
+
+<div class="tefuda">
+
+
+
+	<data onclick="hooo(this)" class="card" ><img id="t1" src="./image/torannpu-illust1.png"></data>
+	<data onclick="hooo(this)" class="card" ><img id="t2" src="./image/torannpu-illust2.png"></data>
+	<data onclick="hooo(this)" class="card" ><img id="t3" src="./image/torannpu-illust3.png"></data>
+	<data onclick="hooo(this)" class="card" ><img id="t4" src="./image/torannpu-illust4.png"></data>
+	<data onclick="hooo(this)" class="card" ><img id="t5"src="./image/torannpu-illust5.png"></data>
+	<data onclick="hooo(this)" class="card" ><img id="t6"src="./image/torannpu-illust6.png"></data>
+	<data onclick="hooo(this)" class="card" ><img id="t7"src="./image/torannpu-illust7.png"></data>
+	<data onclick="hooo(this)" class="card" ><img id="t8"src="./image/torannpu-illust8.png"></data>
+	<data onclick="hooo(this)" class="card" ><img id="t9"src="./image/torannpu-illust9.png"></data>
+	<data onclick="hooo(this)" class="card" ><img id="t10"src="./image/torannpu-illust10.png"></data>
+	<data onclick="hooo(this)" class="card" ><img id="t11"src="./image/torannpu-illust11.png"></data>
+	<data onclick="hooo(this)" class="card" ><img id="t12"src="./image/torannpu-illust12.png"></data>
+	<data onclick="hooo(this)" class="card" ><img id="t13"src="./image/torannpu-illust13.png"></data>
+	<input type="button" name="pass" value="pass" onclick="haru()">
+<script type="text/javascript">
+	let wee =[6,8,19,21,32,34,45,47 ];
+	let flagwee =[0,0,0,0,0,0,0,0,];
+	console.log(wee);
+//山札
+var randoms = [];
+
+/** 最小値と最大値 */
+var min = 1, max = 52;
+ 
+/** 重複チェックしながら乱数作成 */
+for(let i = min; i <= max; i++){
+  while(true){
+    var tmp = intRandom(min, max);
+    if(!randoms.includes(tmp)){
+      randoms.push(tmp);
+      break;
+    }
+  }
+}
+
+console.log(randoms);
+//♦７=id=33 h7id=46 c7id=20 s7id=7
+      // 手札の設定
+    for (let i = 1; i<14; i++) {
+
+      //let randnum = 1 + Math.floor( Math.random() * 52);
+
+      //img要素のsrcに画像ファイル名を設定する
+      let img = document.getElementById("t"+i);
+      data=img.parentNode;
+      data.value=randoms[i-1];
+      //data.setAttribute("style","pointer-events:auto;");
+      img.src = "image/torannpu-illust" + randoms[i-1] + ".png"
+      if(data.value==7||data.value==20||data.value==33||data.value==46) {
+        img.style.visibility='hidden';
+
+      }
+    }
+ //順番
+ let zyun
+ 
+
+ for(let i=0;i<=13;i++){
+    	  //console.log(randoms[i]);   
+         if (randoms[i]==7) {
+           
+             p[0]--;
+         }
+             if (randoms[i]==20) { 
+             p[0]--;  
+         }   
+             if (randoms[i]==33) {
+             p[0]--;
+         }   
+             if (randoms[i]==46) {
+             p[0]--; 
+         }
+
+ }   	
+    for(let i=14;i<=26;i++){
+    	  //console.log(randoms[i]);   
+         if (randoms[i]==7) {
+           
+             p[1]--;
+         }
+             if (randoms[i]==20) { 
+             p[1]--;  
+         }   
+             if (randoms[i]==33) {
+             p[1]--;
+         }   
+             if (randoms[i]==46) {
+             p[1]--; 
+         }
+}
+    	
+    for(let i=27;i<=39;i++){
+    	  //console.log(randoms[i]);   
+         if (randoms[i]==7) {
+           
+             p[2]--;
+         }
+             if (randoms[i]==20) { 
+             p[2]--;  
+         }   
+             if (randoms[i]==33) {
+             p[2]--;
+         }   
+             if (randoms[i]==46) {
+             p[2]--; 
+         }
+}
+    	
+    for(let i=40;i<=52;i++){
+    	  //console.log(randoms[i]);   
+         if (randoms[i]==7) {
+           
+             p[3]--;
+         }
+             if (randoms[i]==20) { 
+             p[3]--;  
+         }   
+             if (randoms[i]==33) {
+             p[3]--;
+         }   
+             if (randoms[i]==46) {
+             p[3]--; 
+         }
+
+    	
+    }
+    for(let i=0;i<=52;i++){
+    	  //console.log(randoms[i]);   
+         if (randoms[i]==33) {
+             //console.log(bango(i));
+             zyun = bango(i);
+                
+         }
+    	
+    }
+    
+  
+foo(7);
+foo(46);
+foo(20);
+foo(33);
+
+if (zyun!=0) {
+	for (let i= zyun ; i<=3; i++) {
+		kirikae(i);
+	}
+}
+ 
+ function dad(x){
+	return 2*(x-x%13)/13+((x-13*(x-x%13)/13+5)-(x-13*(x-x%13)/13+5)%6)/6-1; 
+	//return 2*Math.floor(x/13)+Math.floor((x-13*Math.floor(x/13)+5)/6)-1;
+}
+       
+update();
+
+/** min以上max以下の整数値の乱数を返す */
+function intRandom(min, max){
+  return Math.floor( Math.random() * (max - min + 1)) + min;
+}
+
+ //♦７保持者の番号    
+function bango(i){
+	return (i-i%13)/13;
+}
+
+//指定したトランプID ｋの表示
+function foo(k){
+	kawa=document.getElementById(k);
+    kawa.style.visibility='visible';
+}
+
+function update(){
+	for (var i = 1 ; i < 14; i++) {
+	let img = document.getElementById("t"+i);
+      ta=img.parentNode;
+      ta.value=randoms[i-1];
+     ta.setAttribute("style","pointer-events:none;");
+	}
+  for(j=0;j<8;j++){
+   for(i=1;i<14;i++){ 
+   if (wee[j]==randoms[i-1]){
+    	let img = document.getElementById("t"+i);
+      ata=img.parentNode;
+      ata.value=randoms[i-1];
+     ata.setAttribute("style","pointer-events:auto;");
+
+    }
+   }
+  }
+}
+
+  //プレイヤー番号を指定すると手札からランダムに一枚出される
+function kirikae(e){
+	let h =0;
+	let k =[];
+	let n = e*13+1;
+	//探索して出せるカードを抽出
+	for(j=0;j<8;j++){
+	  	for(i=n;i<n+13;i++){
+	  		if (wee[j]==randoms[i-1]&&flagwee[dad(wee[j])]==0){
+	  			k[h]=wee[j];
+	    		h++;
+	    		
+	    	}
+	    }   
+	}
+	//抽出したカードから1枚選出して表示更新
+	if (h!=0){
+		let m = intRandom(0,h-1);
+		//console.log(m,k);
+		foo(k[m]);
+		kousinn(k[m]);
+		p[e]--;
+		if (p[e]==0) 
+		{
+				alert("win"+e);
+		}
+		//console.log(e,k[m],p[0]+p[1]+p[2]+p[3])
+		//console.log("      ",randoms[n-1],randoms[n],randoms[n+1],randoms[n+2],randoms[n+3],randoms[n+4],randoms[n+5],randoms[n+6],randoms[n+7],randoms[n+8],randoms[n+9],randoms[n+10],randoms[n+11]);
+		//console.log(e,k[m],p[0],p[1],p[2],p[3],p[0]+p[1]+p[2]+p[3])
+	}
+	//console.log(p[1],p[2],p[3])
+}
+//あるカードの範囲を更新
+function kousinn(x){
+	let target=dad(x);
+	if (target %2==1){
+	    if (wee[target]%13!=0) {
+	      wee[target]++;
+	    }else{
+	    	flagwee[target]=1;
+	    }
+	}else{
+	    if (wee[target]%13!=1) {
+	      wee[target]--;
+	    }else{
+	    	flagwee[target]=1;
+	    }
+	//console.log(x,target,wee[target]);
+
+
+} 
+}
+
+
+ 
+
+
+</script>
+</div>
+	
+
+</body>
+</html>
